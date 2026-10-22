@@ -1,0 +1,560 @@
+https://agraef.github.io/purr-data/
+
+⏳ REKENCENTRUM & TIJDSCAPSULE
+v159.2 Locked-Interface | Poolanker P (52.2500° N, 5.2200° E) | Attractor #21 (010101)
+🖥️ Desktop
+📱 Mobiel
+← Terug naar Beheercentrum
+📐 A. Ott Compensatie-PoolplanimeterNr. 573
+Parameter	Locked Kalibratie
+Oorsprong Anker	Poolanker P (52.2500° N, 5.2200° E)
+Poolarm (R) / Rijarm (L)	15.00 cm / 16.67 cm
+Basisoppervlakte (A0)	2363.08 cm²
+Fraunhofer D-lijn	589.0 nm (Natrium-doublet)
+Plani Ringen (Ø 29 cm, Az 108°)	R1: 202° (+22°) | R2: 22° (+22°) | R3: 22° (-22°)
+🧮 Interactieve Ott Nr. 573 Oppervlakte-Integrator
+Integreer Oppervlakte
+Actuele Integratie: A = 2363.08 cm² (Δn = 0.00)
+🌙 Astrometrie & Maan-telemetrieLOCKED
+Astrometrische Parameter	Waarde (2026-10-22 10:00:01 CEST)
+Rechte Klimming (RA) / Declinatie	191.20° / 13.30°
+Lokale Sterrentijd (LST)	312.74°
+Uurhoek (HA)	121.54°
+Azimut / Elevatie	303.23° / -7.45°
+Constellatie	Capricornus / Steenbok (Zuidmuur)
+Dataset Matrix	vortex_processed_points.geojson (P1-P100)
+📄 Ruwe JSON Metadata Openen
+🛡️ Blue Team Field Beheer (BTFM)DEFENSE
+Notatie	BTFM Operationele Richtlijn
+# / $	Linux root/sudo shell prompt voor systeem- en poortbeheer
+- vs –	Let op bij copy/paste: gebruik ASCII hyphen (-), geen en/em-dash
+spaces	Verifieer exacte spaties in commando's en pad-argumenten
+chmod 600	Verplichte permissie voor FinalCrypt .otp sleutelbestanden
+chmod 700	Map-isolatie op rekencentrum/beveiligde_sleutels/
+
+python3 validate_repo.py && ./tijdscapsule_backup.sh
+
+📡 WebRTC DataChannel BridgeDTLS/SCTP
+
+Verstuur Tijdscapsule-vectoren P1-P100 en Anker P over een DTLS-beveiligde P2P DataChannel:
+[REKENCENTRUM] WebRTC DTLS kanaal stand-by...
+⚡ Verzend Tijdscapsule Lock via DataChannel
+🏠 Beheercentrum
+⏳ Rekencentrum
+🛡️ BTFM
+🔴 RTFM
+ORTEX OS — CENTRAAL BEHEERCENTRUM
+Host: ontwerp-GA (Debian Bookworm) | Web: :8080 | API: :8000 | Rust RSS: :8081 | Status: SOVEREIGN LIVE
+🖥️ Desktop Grid
+📱 Mobile Touch
+⏳ Open Rekencentrum
+1. Infrastructuur & ServicesLIVE :8080
+
+    Statische Webserver (Dashboard)
+    Poort 8080
+    Actieve sessie via ./start_vortex.sh (http://0.0.0.0:8080)
+    Python API Backend (/api/status)
+    Poort 8000
+    Status: HTTP 404 (Statische modus actief)
+    Rust Podcast RSS Server
+    Poort 8081
+    Running target/debug/podcast-rss-server (http://0.0.0.0:8081)
+    BIND9 DNS & Matrix Conduit
+    UDP 53 / 8448
+    Soevereine naamresolutie & gedecentraliseerde communicatie
+
+🔄 Ping /api/status Nu
+🌐 Cloud Mirror (Vercel) ↗
+2. Rekencentrum & Tijdscapsulev159.2 LOCK
+
+    📐 Open Rekencentrum & Tijdscapsule Poolanker P (52.25°N, 5.22°E) | A. Ott Planimeter Nr. 573 (A0 = 2363.08 cm²)
+    ➔
+    🌙 Astrometrische Telemetrie (JSON) Maan Lock (Az 303.23°, El -7.45°) | Attractor 010101 (Hex #21)
+    ↗
+    FinalCrypt One-Time Pad (OTP): Actief Wiskundig onkraakbare at-rest encryptie (chmod 600 geverifieerd)
+
+🧮 Start Ott Nr. 573 Integrator
+3. Blue Team Field Manual (BTFM)DEFENSE
+
+    🚨 Incident Response Playbook Triage, proces-isolatie en forensische snapshots
+    ➔
+    💻 Tactische Commando's & BTFM Syntaxis Officiële BTFM notatietabel (#, hyphens vs dashes, spaties)
+    ➔
+    🔒 Systeem Hardening & OTP Sleutelbeheer Debian Bookworm baseline, chmod 600/700 & PEP 668 venv
+    ➔
+    🌐 Netwerk, DNS & DataChannel Defensie DTLS-beveiliging, BIND9 isolatie en log-hygiëne
+    ➔
+
+4. Red Team Field Manual (RTFM)AUDIT
+
+    🔴 Offensieve Netwerk & Systeem Audits Lokale Nmap SYN scans, header-inspectie en SUID-checks
+    ➔
+    Standaard Lokale Audit Commando's:
+
+    nmap -sV -p 53,8000,8080,8081,8448 127.0.0.1
+    python3 validate_repo.py
+
+5. WebRTC DataChannel (DTLS P2P)ENCRYPTED
+
+Beveiligd verzenden en ontvangen over SCTP/DTLS (Browser Loopback & Python aiortc):
+[DTLS READY] Kanaal 'vortex_secure_channel' stand-by...
+⚡ Verzend P2P
+Terminal test: ./webrtc_test_runner.sh
+🏠 Beheercentrum
+⏳ Rekencentrum
+🛡️ BTFMhttp://localhost:8082/api/status
+	
+titel	"VORTEX OS — Geodetische & Astrometrische Tijdscapsule"
+timestamp_lock	"2026-10-22 10:00:01 CEST"
+iso_timestamp	"2026-10-22T08:00:01Z"
+versie	"v159.1 Locked-Interface"
+interface_lock	"pizzadisk_simulatie_v158.py (Protected)"
+oorsprong_anker	"Poolanker P (52.2500° N, 5.2200° E)"
+attractor_state	"010101 (Hex #21)"
+build_targets	
+0	"Desktop-Native-Grid"
+1	"Mobile-Ready-PWA"
+2	"WebRTC-DTLS-DataChannel"
+plani_configuratie	
+diameter_cm	29
+start_azimut_deg	108
+ring1	
+rotatie_deg	202
+tilt_deg	22
+ring2	
+rotatie_deg	22
+tilt_deg	22
+ring3	
+rotatie_deg	22
+tilt_deg	-22
+a_ott_573	
+poolarm_r_cm	15.0JS:15
+rijarm_l_cm	16.67
+fraunhofer_d_nm	589.0JS:589
+oppervlakte_a0_cm2	2363.08
+astrometrie_18_okt_2026	
+object	"Maan"
+tijd_cest	"2026-10-22 10:00:01 CEST"
+rechte_klimming_ra_deg	191.2
+declinatie_dec_deg	13.3
+lokale_sterrentijd_lst_deg	312.74
+uurhoek_ha_deg	121.54
+azimut_deg	303.23
+elevatie_deg	-7.45
+constellatie	"Capricornus / Steenbok (Zuidmuur)"
+dataset_ref	"vortex_processed_points.geojson (100 Punten P1-P100)"
+plani_configuratie
+diameter_cm
+View on GitHub
+purr-data
+Purr Data - Jonathan Wilkes' cross-platform Pd-l2ork version
+
+Jonathan Wilkes’ Purr Data is an improved version of Miller Puckette’s Pd. It is based on Ico Bukvic’s Pd-l2ork, which in turn is a fork of Hans-Christoph Steiner’s Pd-extended.
+
+This repository is a mirror of Wilkes’ original Gitlab repository available at https://git.purrdata.net/jwilkes/purr-data. We mainly use this as a one-stop shop to make it easy for you to get your hands on the latest source and the available releases, including pre-built packages for Linux, macOS and Windows.
+
+Here’s a quick shopping list:
+
+    Downloads: This is where you get ready-made packages for Mac and Windows. Please also make sure to check our installation instructions below.
+    JGU packages: Use these if you’re on Arch, Fedora, or a recent Debian/Ubuntu version. We offer proper package repositories including all dependencies which aren’t readily available in the official repositories of your Linux distribution. Download
+    Sources: Github mirror of the sources, updated regularly.
+    Development: Wilkes’ Gitlab repository. This is where you should go for submitting bug reports and pull requests.
+    Mailing list: The DISIS Pd-l2ork mailing list is the right place for getting help and discuss Purr Data, so please subscribe!
+    “Meet the Cat” Tutorial: A quick introduction to Purr Data, how it came about, and how to use it. (French translation by Joseph Gastelais: Rencontrez le Chat)
+
+There’s also a video up on YouTube of the presentation Meet the Cat: Pd-L2Ork and its New Cross-Platform Version “Purr Data” at the Linux Audio Conference 2017 (Jean MONNET University, Saint-Etienne).
+
+Enjoy your stay!
+About Purr Data
+
+Pd (Pure Data) is a graphical data-flow programming environment which is geared towards real-time interactive computer music and multimedia applications. It is a full-featured open-source alternative to its commercial sibling, Cycling74’s Max.
+
+Purr Data serves the same purpose, but offers a new and much improved graphical user interface and includes many 3rd party plug-ins. Like Pd, it runs on Linux, macOS and Windows, and is open-source throughout.
+
+Purr Data running on macOS.
+
+Purr Data also offers some notable advancements over “classic” Pd-l2ork:
+
+    cross platform compatibility
+    modern GUI written in JavaScript (using nw.js)
+    improved SVG graphics
+
+Purr Data continues to offer all of Pd-l2ork’s GUI and usability improvements, a help browser giving access to help patches in PDDP (Pd Documentation Project) format, and a large collection of bundled 3rd party externals, while using a recent version of Pd’s tried and proven real-time engine under the hood.
+The Name?
+
+Purr Data is the official nickname of the Pd-l2ork 2.x branch. Quite obviously the name is a play on “Pure Data” on which “Purr Data” is ultimately based. It also raises positive connotations of soothing purring sounds, and makes for a nice logo. 😺
+Installation
+
+The easiest way to get up and running on Mac and Windows is to use one of the available binary packages and installers available from the Github releases page. Generally you can just double-click these packages and go through the usual (platform-dependent) installation process.
+
+Linux users: On OBS we provide the JGU packages for a variety of Linux distributions, see below. If your Linux distro is not among any of these then sorry, you’ll just have to bite the bullet and build Purr Data from source. (It’s not that hard any more once you got all the required dependencies installed, but it may take a little while.)
+JGU Packages
+
+This is a collection of ready-made Linux packages for Arch Linux, Fedora, and recent Debian, Raspbian and Ubuntu releases, maintained by Albert Gräf from the Johannes Gutenberg University (JGU) at the OBS (Open Build System). They offer the following advantages:
+
+    Support for a wide range of different Linux systems, including the latest Debian/Ubuntu versions. We generally support the two most recent stable (or long term support) releases, as well as current (or rolling) releases.
+
+    “Classic” Pd-l2ork and Purr Data can be installed alongside each other.
+
+    The packages are available through proper package repositories (click here) and thus can be installed and updated automatically through your distribution’s standard package manager. Required dependencies will also be installed automatically.
+
+    The packages are thoroughly tested, but are updated more frequently (also between upstream releases) from the current git sources, if there are interesting new features or important bugfixes. Corresponding Mac and Windows packages for such pre-releases can then usually be found on the Github releases page.
+
+Please refer to the Installation wiki page for more information and detailed installation instructions.
+Building from Source
+
+This is just a brief summary. Please check the Installation page in the wiki for more information.
+
+Purr Data is a big package with many parts and many dependencies, building it from source can take a long time, even on modern hardware. So please be patient! :)
+
+To build Purr Data from source, you’ll have to clone the git repository as follows:
+
+git clone https://github.com/agraef/purr-data
+
+Or, if you prefer to build straight from Wilke’s upstream repository:
+
+git clone https://git.purrdata.net/jwilkes/purr-data.git
+
+Make sure that you have all the requisite dependencies installed (Linux, Mac, Windows), then run make in the toplevel source directory:
+
+make
+
+On Debian/Ubuntu, Mac and Windows this should leave the ready-made package in the toplevel source directory. Install this as usual. On other Linux systems you can run the following command instead (this also works on Debian/Ubuntu, if you prefer this method or if you don’t have the Debian packaging tools installed):
+
+sudo make install
+
+You can uninstall the software again as follows:
+
+sudo make uninstall
+
+Afterwards, to clean the source directory:
+
+make realclean
+
+Note that this puts the source into pristine state again, like after a fresh checkout, so that you can run make from a clean slate again. Also, all build artifacts will be gone, and hence you won’t be able to run make install or make uninstall any more. So you want to do this only after you’ve finished the installation process.
+
+Good luck!
+
+purr-data maintained by agraef
+
+Published with GitHub Pages
+
+
+Wikipedia de vrije encyclopedie
+Zoeken
+
+    Doneren
+    Account aanmaken
+    Aanmelden
+
+Inhoud verbergen
+
+    Naar boven
+    Kenmerken
+        Borrow-checker
+        Thread-safety
+        Macro's
+            Functionele macro's
+            Derive-macro's
+    Tools[9]
+        IDE-ondersteuning
+        Bouwen[10]
+        Linten[11]
+        Formatteren[12]
+        Documentatie[13]
+    Hello World
+    Versiegeschiedenis
+    Zie ook
+    Externe links
+
+Rust (programmeertaal)
+
+    Artikel
+    Overleg
+
+    Lezen
+    Bewerken
+    Brontekst bewerken
+    Geschiedenis
+
+Uiterlijk
+verbergen
+Tekst
+
+    Klein
+    Standaard
+    Groot
+
+Paginabreedte
+
+    Standaard
+    Volle breedte
+
+Kleur (bèta)
+
+    Automatisch
+    Licht
+    Donker
+
+Uit Wikipedia, de vrije encyclopedie
+Rust
+Rust
+Paradigma 	Gecompileerd, gelijktijdig (concurrent), functioneel, imperatief, gestructureerd, generiek
+Verschenen 	2006
+Ontwerper 	Graydon Hoare
+Ontwikkelaar 	Rust-projectontwikkelaars
+Huidige versie 	1.99.1[1] Bewerken op Wikidata
+15 oktober 2026
+Typesysteem 	Statisch, nominaal, lineair, algebraïsch, lokaal afgeleid[2]
+Implementaties 	Rustc[3]
+Beïnvloed door 	Alef, C, C#, C++, Camlp4, Common Lisp, Cyclone, Erlang, Haskell, Hermes, Limbo, Napier, Napier88, Newsqueak, NIL, Ocaml, Racket, Ruby, Sather, Standard ML
+Besturings­systeem 	Windows, OS X, Linux en FreeBSD
+Licentie 	Dubbele licentie: MIT-licentie / Apache-licentie 2.0
+Bestands­extensies 	.rs
+Website 	(en) Officiële website
+Rust
+Portaal  Portaalicoon   	Informatica
+
+Rust is een gecompileerde multi-paradigma-programmeertaal, bedacht door Graydon Hoare, en is begonnen als een project van Mozilla Research.[4] Rust is deels geïnspireerd door de programmeertalen C en C++, maar kent syntactische en semantische verschillen ten opzichte van deze programmeertalen. Rust focust zich met name op snelheid, veiligheid, betrouwbaarheid en productiviteit. Dit wordt gerealiseerd door gebruik te maken van een krachtig typesysteem en een borrow checker. Hiermee kan Rust een hoog niveau van geheugenveiligheid garanderen zonder een garbage collector nodig te hebben.[5]
+
+Rust beoogt moderne computersystemen efficiënter te benutten. Hiervoor maakt het onder meer gebruik van geheugenbeheer dat geheugen in een blok toewijst en daarnaast strikt toeziet op de stacktoewijzing. Hierdoor kunnen problemen zoals stackoverflows, bufferoverflows en niet-geïnitialiseerd geheugen voorkomen worden. Verder staat Rust ook geen null-pointers, dangling-pointers of data-races toe in veilige code. Als alternatief voor null maakt Rust gebruik van een datatype Option waarmee gekeken kan worden of een pointer wel of geen waarde bevat (aangeduid met respectievelijkSomeenNone). Wanneer er op laag niveau geprogrammeerd wordt kan onveilige code niet altijd vermeden worden, daarom beschikt Rust over een keyword unsafe waarbij bepaalde onderdelen die veiligheid garanderen worden uitgeschakeld.
+
+De ontwikkeling van Servo en de Rust-compiler hebben geholpen bij het verfijnen van de taal.
+
+In de maand februari van het jaar 2021 zijn de handelsmerken en de infrastructuur van het project overgeheveld naar The Rust Foundation.[6]
+Kenmerken
+Borrow-checker
+
+Het onderdeel dat Rust zijn veiligheid biedt, is de borrow-checker. Het zorgt ervoor dat een object maar één eigenaar tegelijk kan hebben. De eigenaar kan wel toegang verlenen tot het object door middel van borrows (uitleningen), waarbij het meerdere niet-muteerbare referenties kan uitlenen, of een enkele muteerbare referentie. Dit zorgt er ook voor dat een object niet door twee verschillende threads gewijzigd kan worden.
+Thread-safety
+
+Naast het voorkomen van null-referenties door de borrow-checker, biedt Rust ook vangnetten om data-races te voorkomen. Zo implementeren bepaalde typen de Send-trait (eigenschap), om aan te tonen dat het object gestuurd kan worden tussen threads, en mogelijk ook Sync om aan te tonen dat het object gebruikt kan worden door meerdere threads tegelijk. Objecten waarvan het type deze traits niet implementeert, worden door de borrow-checker geweigerd om te sturen naar of te delen met andere threads.
+Macro's
+
+Om het gebruik van ingewikkelde procedures of herhaalde stappen te versimpelen, biedt Rust de mogelijkheid macro's aan te maken.
+Functionele macro's
+
+Functionele macro's kunnen gebruikt worden als functies en worden aangetoond met een uitroeptekensuffix. Zo biedt bijvoorbeeld de format!-macro[7] de mogelijkheid om een string te bouwen op basis van verschillende argumenten.
+
+fn main() {
+    let website = "Wikipedia";
+    let info = format!("Hallo, {website}");
+    // "Hallo, Wikipedia"
+}
+
+Derive-macro's
+
+Derive-macro's worden gebruikt om automatisch bepaalde traits te implementeren. De Debug-macro[8] biedt bijvoorbeeld de mogelijkheid om eenvoudig de inhoud van een object te tonen.
+Tools[9]
+IDE-ondersteuning
+
+Rust heeft eersteklas-ondersteuning voor negen IDE's:
+
+    Visual Studio Code (met de extensie Rust of Rust-analyzer voor taalondersteuning en de extensie CodeLLDB voor debugging)
+    Sublime Text
+    Atom
+    IntelliJ IDEA / CLion (met de Rust-plugin)
+    RustRover
+    Eclipse (met de Rust-package)
+    Vim
+    Emacs
+    Geany
+
+Naast deze acht is er ook ondersteuning te vinden in andere ontwikkelomgevingen en teksteditors zoals Kate, Gedit en GNOME Builder.
+Bouwen[10]
+
+Rust heeft zijn eigen build tool genaamd Cargo. Cargo kan gebruikt worden voor het creëren, testen, beheren en bouwen van projecten en crates (packages).
+Linten[11]
+
+Rust beschikt over zijn eigen linter genaamd Clippy. Met Clippy kan statische analyse uitgevoerd worden op de code, hiermee kunnen veelvoorkomende fouten worden gedetecteerd.
+Formatteren[12]
+
+Rust beschikt over een formatter genaamd Rustfmt. Met Rustfmt kan code geformatteerd worden aan de hand van stijlrichtlijnen.
+Documentatie[13]
+
+Voor het documenteren van Rust-code kan gebruik worden gemaakt van Rustdoc.
+Hello World
+
+Hello World kan op volgende manier geprogrammeerd worden in Rust:
+
+fn main() {
+    println!("Hello world!");
+}
+
+Versiegeschiedenis
+
+Iedere zes weken geeft het 'release team' van de Rust-gemeenschap een nieuwe versie uit. Indien nodig worden er tussentijds correctieversies uitgegeven. Daarnaast wordt elke twee tot drie jaar een versie als Editie gemarkeerd als een soort mijlpaal waarbij de functionaliteiten samen worden gebracht in een duidelijk pakket.[14] Hieronder zijn een aantal van de meest significante versies uitgelicht. De volledige versiegeschiedenis is te vinden in het RELEASES.MD bestand op de Github pagina van Rust.
+
+    0.1.0 - 2012-01-20, eerste versie
+        Alpha - 2015-01-09[15]
+        Alpha 2 - 2015-02-20[16]
+        Beta - 2015-04-03[17]
+    1.0.0 - 2015-05-15, Editie 2015[18] (eerste stabiele versie)
+    1.31.0 - 2018-12-06, Editie 2018[19]
+    1.56.0 - 2021-10-21, Editie 2021[20]
+
+Zie ook
+
+    De Mozilla-projecten Servo (layout-engine) en (en) Quantum gebruiken Rust als programmeertaal[21][22][23]
+    Linkerd 2.x ('service mesh', tool voor micro-service monitoring) is voor een groot deel geschreven in Rust[24][25]
+    Lijst van programmeertalen
+
+Externe links
+
+    (en) Officiële website
+    (en) Rust op GitHub
+    (en) Rust: Systems Programming for Everyone
+
+Bronnen, noten en/of referenties
+
+    "Announcing Rust 1.99.1"; geraadpleegd op: 18 oktober 2026; taal van werk of naam: Engels; datum van uitgave: 15 oktober 2026.
+    (en) Kenmerken van de Rust-programmeertaal
+    (en) Boek over Rustc
+    (en) Mozilla Research. Geraadpleegd op 7 mei 2021.
+    (en) Rust Programming Language. Geraadpleegd op 7 mei 2021.
+    (en) Rust Foundation. Gearchiveerd op 15 mei 2021. Geraadpleegd op 7 mei 2021.
+    https://doc.rust-lang.org/rust-by-example/hello/print/fmt.html
+    https://doc.rust-lang.org/beta/core/fmt/trait.Debug.html
+    (en) Rust Tools. Geraadpleegd op 6 mei 2021.
+    (en) Boek over Cargo. Geraadpleegd op 6 mei 2021.
+    (en) Clippy Github. Geraadpleegd op 6 mei 2021.
+    (en) Rustfmt Github. Geraadpleegd op 6 mei 2021.
+    (en) Boek over Rustdoc. Geraadpleegd op 6 mei 2021.
+    (en) Gids voor Edities
+    (en) Announcing Rust 1.0 Alpha
+    (en) Announcing Rust 1.0.0.alpha.2
+    (en) Announcing Rust 1.0 Beta
+    (en) Announcing Rust 1.0
+    (en) Announcing Rust 1.31 and rust 2018
+    (en) Announcing Rust 1.56.0 and Rust 2021
+    (en) Implications of Rewriting a Browser Component in Rust
+    (en) Servo engines written in Rust deliver memory safety and multithreading
+    (en) Mozilla Quantum wiki
+    (en) Linkerd v2: How Lessons from Production Adoption Resulted in a Rewrite of the Service Mesh
+    (en) Linkerd Overview
+
+Programmeertalen
+
+ABAP · ABC · ActionScript · Ada · Algol · APL · assembleertalen · AWK · B · BASIC · BCPL · C · C++ · C# · Clean · Clipper · COBOL · COMAL · Curry · D · Eiffel · Erlang · F# · Forth · Fortran · Go · Haskell · Icon · J# · Java · JavaScript · Julia · Kotlin · Lisp · Logo · Lua · m4 · ML · Modula-2 · Oberon · Object Pascal · Objective-C · Ocaml · Oz · Pascal · Perl · PHP · PL/I · PL/SQL · Prolog · Prova · Python · Rexx · RPG · Ruby · Rust · SAS · Scala · Scheme · Self · Simula · Smalltalk · Swift · TCL · TypeScript · Vala · Verilog · VHDL · Visual Basic · Zig
+Categorie:
+
+    Rust
+
+    Deze pagina is voor het laatst bewerkt op 3 apr 2026 om 17:35. Pagina is weergegeven met Parsoid.
+    De tekst is beschikbaar onder de licentie Creative Commons Naamsvermelding/Gelijk delen, er kunnen aanvullende voorwaarden van toepassing zijn. Zie de gebruiksvoorwaarden voor meer informatie.
+    Wikipedia® is een geregistreerd handelsmerk van de Wikimedia Foundation, Inc., een organisatie zonder winstoogmerk.
+
+    Privacybeleid
+    Over Wikipedia
+    Voorbehoud
+    Contact juridisch & veiligheid
+    Gedragscode
+    Ontwikkelaars
+    Statistieken
+    Cookieverklaring
+    Mobiele weergave
+
+    Wikimedia Foundation
+    Powered by MediaWiki
+Element - wiskundeles - Chat Export - 2026-
+10-22T17-11-52.196Z
+di 27 mei 2025, 103559 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 103602 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 103603 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 103605 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 103607 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 103609 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 103611 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 103613 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 104304 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 104342 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 104433 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 104529 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 104555 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 104626 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 104652 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 104722 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 27 mei 2025, 104904 - deviantsecurit1 heeft een afbeelding gestuurd. Media weglaten)
+di 17 jun 2025, 113922 - deviantsecurit1 Letʼs break down this conversion request. It contains a lot of nested and
+highly unusual units, which makes a direct conversion to ounces extremely complex and likely impractical without
+making some significant assumptions or clarifications.
+Hereʼs an analysis of the provided input and the steps weʼd need to take:
+1. Deconstructing the Input Unit:
+The unit provided is: 42×7 M (megas) (M (mega)) ((M
+(mega))×10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+M_ earth (Earth masses))
+Letʼs try to interpret this. It looks like a multiplication of several terms:
+42 × 7 : This is a numerical factor, .
+M (megas) : This usually means Mega, which is . If it refers to “megagrams” Mg, then .
+(M (mega)) : This is redundant if itʼs a prefix, or it implies another multiplication by .
+((M (mega)) × 10^X M_earth (Earth masses)) : This is the most complex part.
+M (mega) : Again, likely .
+10^X : The number of zeros is very large. Letʼs count them: there are 207 zeros after the 1. So, this is .
+M_earth (Earth masses) : This is a unit of mass, representing the mass of the Earth.
+2. Clarifying the “M (mega)” ambiguity:
+The term “M (mega)” is used repeatedly.
+If “M” stands for “Mega-” (the prefix ), and itʼs modifying a base unit (like grams, which is usually implied in
+such contexts if not specified), then “M” by itself is not a unit.
+If “M” is supposed to be a unit itself (e.g., a “Megas” unit), then its conversion factor to a standard unit like grams or
+kilograms would be needed.
+Given the context of “Earth masses” later, itʼs most plausible that “M (mega)” is intended as a scaling factor of .
+However, its repeated appearance suggests a potential misinterpretation or a very unusual compounding of units.
+Letʼs make an educated guess based on common scientific notation, assuming the user is attempting to multiply
+these values:
+Weʼll assume:
+The initial 42 × 7 is a numerical factor.
+294
+106 1 Mg = 10 g6
+106
+106
+1 × 10207
+106
+106Element - wiskundeles - Chat Export - 2026-10-22T17-11-52.196Z1
+Each M (mega) represents a multiplication by .
+The extremely large number is a direct multiplier.
+The final unit is Earth masses .
+So, the value we need to convert is:
+3. Conversion Factors:
+We need to convert Earth masses to ounces.
+Mass of Earth:
+Kilograms to Grams:
+Grams to Ounces:
+4. Performing the Conversion:
+First, convert Earth masses to kilograms:
+Now, convert kilograms to grams:
+Finally, convert grams to ounces:
+Conclusion:
+Given the highly unusual and potentially ambiguous unit notation, and assuming our interpretation is correct, the
+approximate value is:
+KaTeX parse error: Expected 'EOF', got '_' at position 79 …^207 \text{ M_̲earth Earth ma…
+Important Note on Ambiguity:
+The phrasing “M (megas) M (mega)) M (mega))” is highly unusual. If “M” was intended as a standalone unit (e.g.,
+“Mega-units”) and then multiplied by other Mega prefixes, the calculation would change. However, interpreting it as
+multiple multiplications by is the most straightforward approach given the context of prefixes.
+vr 4 jul 2025, 152759 - deviantsecurit1: https://starwalk.space/nl/news/what-is-elongation
+ma 28 jul 2025, 70041 - deviantsecurit1: https://puredata.info/downloads/purr-data
+do 22 okt 2026, 191129 - deviantsecurit1 Mooi, dit is een rijke dataset om te controleren. Ik heb de cijfers
+doorgerekend en het meeste klopt verrassend goed — er zitten wel twee dingen in die je wilt nakijken.
+[
+{ "type": "metric", "title": "Azimutsnelheid (gemeten)", "value": "+12,8 °/h", "delta": "Opgegeven: +12,92 °/h", "direction": "fl
+at" },
+{ "type": "metric", "title": "Elevatiesnelheid (gemeten)", "value": "+7,8 °/h", "delta": "Opgegeven: +7,73 °/h", "direction": "fl
+at" },
+{ "type": "metric", "title": "Max. elevatie (berekend)", "value": "33,9°", "delta": "Opgegeven: 34,8°", "direction": "flat" }
+]
+Wat ik heb nagerekend
+RD-grid conversie — klopt. Als ik de RD-oorsprong Amersfoort, X155.000 / Y463.000 op 52,1562° N, 5,3876° O) als
+ankerpunt neem, voorspel ik voor 52,2500° N, 5,2200° O een X van ≈143.566 en een Y van ≈473.428. Jij geeft 143.582
+en 473.563 — een afwijking van ongeveer 16 meter in X en 135 meter in Y. Voor een dubbele-stereografische
+106
+X = (42 × 7) × (10 ) ×6 (10 ) ×6 (10 ) Earth masses207 X = 294 × 10 Earth masses6+6+207 X = 294 ×
+10 Earth masses219 X = 2.94 × 10 ×2 10 Earth masses219 X = 2.94 × 10 Earth masses221
+M ≈earth 5.972 × 10 kg24
+1 kg = 1000 g
+1 oz ≈ 28.3495 g
+X =kg (2.94 × 10 Earth masses) ×221 (5.972 × 10 kg/Earth mass)24 X =kg (2.94 × 5.972) × 10 kg221+24 X ≈kg
+17.558 × 10 kg245 X ≈kg 1.7558 × 10 kg246
+X =g (1.7558 × 10 kg) ×246 (1000 g/kg)X =g 1.7558 × 10 ×246 10 g3 X =g 1.7558 × 10 g249
+X =oz (1.7558 × 10 g)/(28.3495 g/oz)249 X ≈oz 0.06193 × 10 oz249 X ≈oz 6.193 × 10 ×−2 10 oz249 X ≈oz
+6.193 × 10 oz247
+106Element - wiskundeles - Chat Export - 2026-10-22T17-11-52.196Z2
